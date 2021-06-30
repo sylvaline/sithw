@@ -1,0 +1,283 @@
+.nav{
+    width: 100%;
+    height: 10vh;
+    color: white;
+
+    .nav_mobile{
+        display: none;
+    }
+
+    .phone_mobile{
+        display: none;
+    }
+
+    .phone{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1em 2em 1em 0 ;
+        height: 5%;
+        background-color: $gray;
+        font-size: .7em;
+        font-weight: 500;
+
+        i{
+            font-size: 1.5em;
+        }
+
+       span{
+           margin-left: .5em;
+           
+       }
+
+       .bar_line{
+           color: $accent_color;
+           font-size: 1.5em;
+           margin: 0 1.5em;
+       }
+    }
+    .nav_dropdown{
+
+        .nav_dropdown_open{
+            position: absolute;
+            top: 3em;
+            left: 25em;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            
+            
+        }
+        &:hover .nav_dropdown_open{
+            background-color: $gray;
+            color: $accent_color;
+            display: block;
+
+        }
+    }
+
+    
+
+    .main_nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 1em;
+        margin-top: 2em;
+        padding: .5em 5em;
+        z-index: 100;
+        position: absolute;
+
+        &.open{
+            position: fixed;
+            top: -2em;
+            right: 0;
+            left: 0;
+            background-color: $gray;
+            padding-top: 1em;
+        }
+
+        .hamburger{
+            margin-right: 2em;
+            cursor: pointer;
+            
+
+            &.move_right{
+                  position: absolute;
+                  right: 1em;  
+            }
+
+            i{
+                transition: all .5s linear;
+                font-size: 1.2em;
+                &:hover{
+                    color: $accent_color;
+                }
+            }
+
+            .line{
+                width: 2em;
+                height: .1em;
+                background-color:white;
+                position: relative;
+
+                &:hover{
+                    background-color: $accent_color;
+                    width: 2em;
+                    height: .1em;
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: .8em;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 1.5em;
+                    height: .14em;
+                    background-color: white;
+                }
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: .4em;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 1em;
+                    height: .15em;
+                    background-color: white;
+                }
+            }
+        }
+
+        .logo{
+            margin-top: -1em;
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            font-size: 1em;
+            font-weight: 500;
+
+            .contact{
+                background-color: $gray;
+                border-radius: .3em;
+
+                &:hover{
+                    background-color: $accent_color;
+                    
+                    border-radius: .3em;
+                }
+
+                a{
+                    &:hover{
+                        color: black;
+                    } 
+                }
+            }
+
+            li{
+                margin-left: .5em;
+                transition: .5s linear;
+                padding: .5em 1em;
+
+                &:hover{
+                    background-color: $gray;
+                    color: $accent_color;
+                    border-radius: .3em;
+                }
+
+                a{
+                    &:hover{
+                        color: $accent_color;
+                    } 
+                }
+            }
+            
+        }
+    }
+  
+    
+}
+
+@media screen and (max-width: 50em) {
+    .nav{
+
+        .nav_inner{
+            display: none;
+        }
+        .nav_mobile{
+            display: block;
+
+            &.open{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                background-color: $gray;
+                
+            }
+
+            
+            .phone{
+                p{
+                    span{
+                        color: $accent_color;
+                    }
+                }
+            }
+        }
+
+        .phone_mobile{
+            display: block;
+        }
+        
+        .main_nav{
+            padding: 1em;
+
+            .hamburger{
+                margin-right: .8em;
+
+                .line{
+                    background-color: $accent_color;
+                    &::before{
+                        background-color: $accent_color;
+                    }
+                    &::after{
+                        background-color: $accent_color;
+                    }
+                }
+            }
+
+            .logo{
+               h1{
+                   font-size: 1.5em;
+               }
+            }
+
+            ul, .ul{
+                background-color: $gray;
+                display: block;
+                position: fixed;
+                top: 8em;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                overflow: auto;
+                height: 95vh;
+
+                &.open{
+                    border-top: .3em solid $accent_color;
+                    top: 3.1em;
+                }
+
+                .contact{
+                    margin-bottom: 2em;
+                }
+
+                li{
+                    margin-top: .5em;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        .nav_dropdown{
+
+            .nav_dropdown_open{
+                top: 3em;
+                
+                
+            }
+            &:hover .nav_dropdown_open{
+                background-color: $gray;
+                color: $accent_color;
+                display: block;
+    
+            }
+        }
+    }
+}
