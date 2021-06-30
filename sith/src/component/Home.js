@@ -53,7 +53,7 @@ function Home() {
               </Slide>
             </div>
             <button>
-              About Us <i className="fas fa-long-arrow-alt-right"></i>
+              About Us 
             </button>
           </div>
 
@@ -87,14 +87,14 @@ function Home() {
                   <button>
                     {" "}
                     Learning Resource Center{" "}
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    
                   </button>
                 </Link>
                 <Link to="/document-resource-centre">
                   <button className="btn_center">
                     {" "}
                     Document Resource Center{" "}
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    
                   </button>
                 </Link>{" "}
                 <span>
@@ -104,7 +104,7 @@ function Home() {
             ) : (
               <button onClick={() => setResourceClicked(true)}>
                 {" "}
-                Resource Centre <i className="fas fa-long-arrow-alt-right"></i>
+                Resource Centre 
               </button>
             )}
           </div>
@@ -133,7 +133,7 @@ function Home() {
               </Slide>
             </div>
             <button>
-              Co-working Space <i className="fas fa-long-arrow-alt-right"></i>
+              Co-working Space 
             </button>
           </div>
 
@@ -161,7 +161,7 @@ function Home() {
               </div>
             </div>
             <button>
-              Events and Calender<i className="fas fa-long-arrow-alt-right"></i>
+              Events and Calender
             </button>
           </div>
         </div>
@@ -195,7 +195,7 @@ function Home() {
               </Slide>
             </div>
             <button>
-              About Us <i className="fas fa-long-arrow-alt-right"></i>
+              About Us 
             </button>
           </div>
 
@@ -227,14 +227,14 @@ function Home() {
                   <button className="btn_first">
                     {" "}
                     Learning Resource Center{" "}
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    
                   </button>
                 </Link>
                 <Link to="/document-resource-centre">
                   <button className="btn_center">
                     {" "}
                     Document Resource Center{" "}
-                    <i className="fas fa-long-arrow-alt-right"></i>
+                    
                   </button>
                 </Link>{" "}
                 <span>
@@ -244,7 +244,7 @@ function Home() {
             ) : (
               <button onClick={() => setResourceClicked(true)}>
                 {" "}
-                Resource Centre <i className="fas fa-long-arrow-alt-right"></i>
+                Resource Centre 
               </button>
             )}
           </div>
@@ -273,7 +273,7 @@ function Home() {
               </Slide>
             </div>
             <button>
-              Co-working Space <i className="fas fa-long-arrow-alt-right"></i>
+              Co-working Space 
             </button>
           </div>
 
@@ -301,7 +301,7 @@ function Home() {
               </Slide>
             </div>
             <button>
-              Events and Calender<i className="fas fa-long-arrow-alt-right"></i>
+              Events and Calender
             </button>
           </div>
         </div>

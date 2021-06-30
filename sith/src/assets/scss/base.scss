@@ -74,10 +74,21 @@ body{
         font-size: 1.5em;
         display: none;
         cursor: pointer;
+        animation: move_up .5s alternate ease infinite;
 
         &.open{
             display: block;
         }
+    }
+}
+
+@keyframes move_up{
+    from{
+        transform: translateY(2px);
+    }
+
+    to{
+        transform: translateY(-1px);
     }
 }
 
