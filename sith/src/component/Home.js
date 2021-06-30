@@ -4,6 +4,7 @@ import Typical from "react-typical";
 import ParticlesBg from "particles-bg";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import Float from "./Float";
 
 function Home() {
   const [isResourceClicked, setResourceClicked] = useState(false);
@@ -37,9 +38,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cum eius earum molestias commodi corrupti 
                   </p>
                 </Fade>
               </div>
@@ -69,9 +72,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cum eius earum molestias commodi corrupti 
                   </p>
                 </Fade>
               </div>
@@ -113,9 +118,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cum eius earum molestias commodi corrupti 
                   </p>
                 </Fade>
               </div>
@@ -144,9 +151,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cum eius earum molestias commodi corrupti 
                   </p>
                 </Fade>
               </div>
@@ -170,10 +179,13 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
                   </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Cum eius earum molestias commodi corrupti 
+                  </p>
+                  
                 </Fade>
               </div>
               <Slide left>
@@ -196,10 +208,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
                   </p>
+                  <p>officiis maiores
+                    eaque dolor rerum cumque quia temporibus, magni magnam
+                    reiciendis veniam asperiores facere, laborum amet?</p>
                 </Fade>
               </div>
               <Slide left>
@@ -245,10 +258,12 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
+
                   </p>
+                  <p>officiis maiores
+                    eaque dolor rerum cumque quia temporibus, magni magnam
+                    reiciendis veniam asperiores facere, laborum amet?</p>
                 </Fade>
               </div>
               <Slide left>
@@ -271,10 +286,11 @@ function Home() {
                 <Fade bottom>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Cum eius earum molestias commodi corrupti officiis maiores
-                    eaque dolor rerum cumque quia temporibus, magni magnam
-                    reiciendis veniam asperiores facere, laborum amet?
+                    Cum eius earum molestias commodi corrupti 
                   </p>
+                  <p>officiis maiores
+                    eaque dolor rerum cumque quia temporibus, magni magnam
+                    reiciendis veniam asperiores facere, laborum amet?</p>
                 </Fade>
               </div>
 
@@ -290,6 +306,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <Float />
     </div>
   );
 }

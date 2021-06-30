@@ -66,5 +66,18 @@ body{
         width: 90%;
         margin: 5em auto 0;
     }
+
+    .float{
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        font-size: 1.5em;
+        display: none;
+        cursor: pointer;
+
+        &.open{
+            display: block;
+        }
+    }
 }
 
